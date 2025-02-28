@@ -1,4 +1,4 @@
-![logo](https://c8.alamy.com/comp/2JM7NW8/accounting-system-icon-monochrome-simple-accounting-icon-for-templates-web-design-and-infographics-2JM7NW8.jpg)
+![logo](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ehBi54YNfIn5J00-Jui8dHH0WIIQwX5v_Q&usqp=CAUsimple-accounting-icon-for-templates-web-design-and-infographics-2JM7NW8.jpg)
 
 # Bank Management System
 ![GitHub Repo stars](https://img.shields.io/github/stars/turki013/Bank-System?style=social)
