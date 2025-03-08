@@ -1,49 +1,64 @@
 
-import java.util.Scanner;
+    import java.util.Scanner;
 
-public class BankSystem {
+    public class BankSystem {
+        static Scanner input = new Scanner(System.in);
+    
+        public static void main(String[] args) {
+            BankMenu();  
+        }
 
-    public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
-        System.out.println("Enter your name: ");
-        String name = input.nextLine();
 
-        // إنشاء كائن SystemBank
-        SystemBank bank = new SystemBank(500, 12345,name);
+     static SystemBank MyAccount = new SystemBank();
 
+     // دالة تعرض القائمة للمستخدم
+     
+     static void BankMenu () {
         int option;
-      // عرض القائمة
         do {
-            System.out.println("\nWelcome to the Bank System");
-            System.out.println("1. Deposit");
-            System.out.println("2. Withdraw");
-            System.out.println("3. Check Balance");
-            System.out.println("4. Display Account Info");
-            System.out.println("5. Exit");
-            System.out.print("Please select an option: ");
+            System.out.println("\n=== welcom to Bank app=====");
+            System.out.println("1. Sign up");
+            System.out.println("2. Login");
+            System.out.println("3. Forget password");
+            System.out.println("4. Reset password");
+            System.out.println("5. Delete account");
+            System.out.println("6. Exit");
+            System.out.print("Enter an option: ");
             option = input.nextInt();
-
+        
             switch (option) {
                 case 1:
-                    bank.deposit();
+                    Account.signUp();
                     break;
                 case 2:
-                    bank.withdraw();
+                    Account.login();
                     break;
                 case 3:
-                    bank.checkBalance();
+                    Account.forgetPassword();
                     break;
                 case 4:
-                    bank.display();
+                    Account.ResetPassword();
                     break;
                 case 5:
-                    System.out.println("Exiting... Goodbye!");
+                    Account.deleteAccount();
+                    break;
+                case 6:
+                    System.out.println("Goodbye");
+                    System.exit(0);
                     break;
                 default:
-                    System.out.println("Invalid option. Please try again.");
+                    System.out.println("Invalid option");
+                    break;
             }
-        } while (option != 5); // تكرار القائمة
-
-        input.close(); // إغلاق Scanner
+             // التحقق من تسجيل المستخدم بنجاح
+            if (Account.isLoggedIn) {
+                System.out.println("You are logged in. Accessing the Bank System...");
+                MyAccount.StartBank(); // فتح النظام بعد تسجيل الدخول
+            }
+        } while (option != 6);
     }
-}
+
+    }
+    
+
+        
