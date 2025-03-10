@@ -8,6 +8,9 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/turki013/Bank-System)
 ![GitHub repo size](https://img.shields.io/github/repo-size/turki013/Bank-System)
 ![License](https://img.shields.io/github/license/turki013/Bank-System)
+# **Translate**
+[![Arabic](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Flag_of_Saudi_Arabia.svg/120px-Flag_of_Saudi_Arabia.svg.png)](README.ar.md)
+
 
 ## Overview :
 The Bank Management System is a Java-based console application designed to provide core banking functionalities through a clean, menu-driven interface. The application utilizes Object-Oriented Programming (OOP) principles to encapsulate business logic, ensuring scalability and maintainability. This project serves as a practical implementation of foundational programming concepts while simulating real-world banking operations.
